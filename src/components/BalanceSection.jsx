@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import ExpenseContext from '../context/ExpenseContext'
 import { saveTransactions, updateTransaction } from '../context/ExpenseAction';
 
-function BalanceSecction() {
+function BalanceSection() {
     const { transactions, edit, dispatch, darkMode } = useContext(ExpenseContext);
 
     const Balance = transactions.reduce((p, c) => {
@@ -59,4 +59,4 @@ function BalanceSecction() {
     )
 }
 
-export default BalanceSecction
+export default BalanceSection

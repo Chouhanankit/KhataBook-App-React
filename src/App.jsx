@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from './components/Navbar';
-import BalanceSecction from './components/balanceSecction';
 import AccountSection from './components/AccountSection';
 import ListGroup from './components/ListGroup';
 import { ExpenseProvider } from './context/ExpenseContext';
+import BalanceSection from './components/BalanceSection';
 
 function App() {
   return (
@@ -12,8 +12,9 @@ function App() {
     <ExpenseProvider>
       <Navbar />
       <div className='conatiner p-5 bg-secondary'>
-        <BalanceSecction />
+        <BalanceSection/>
         <AccountSection />
+
         <ListGroup />
       </div>
     </ExpenseProvider>
